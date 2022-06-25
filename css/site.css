@@ -1,0 +1,244 @@
+/* General typography */
+
+body {
+  font-family: Arimo, sans-serif;
+  margin: 8px 7.5vw;
+background-color: #4B2528;
+  background-image: url('../sprites/CoffeeKnight.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+h5 {
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#warningMsg{
+  position: absolute;
+  left: 23%;
+  top: 30%;
+  background-color: #E7C124;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+#warningMsg p
+{
+text-align: center;
+}
+
+
+/* Site layout */
+
+/* This is the basic box that the main part of the page goes into */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.stories-container{
+  background-image: url('../sprites/newsPaper.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+  padding: 50px;
+    height: 560px;
+background-position: center;
+}
+
+.user-page-container{
+  background-image: url('../sprites/newsPaper.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+  padding: 50px;
+    height: 560px;
+background-position: center;
+}
+
+.user-page-container h2
+{
+text-align: center;
+}
+
+.user-page-container button
+{
+  position: relative;
+  left: 5%;
+}
+
+
+#user-stories-list
+{
+position: relative;
+left: 20%;
+list-style-type: none;
+}
+
+
+#addStoryForm{
+  background-image: url('../sprites/newsPaper.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+width: 550px;
+}
+
+#addStoryForm input
+{
+  position: relative;
+  left: 200%;
+  top: 30px;
+}
+
+#addStoryForm button
+{
+  position: relative;
+  left: 700%;
+  top: -70px;
+  width: 100px;
+}
+
+#addStoryForm label img{
+  position: relative;
+left: 50%;
+  top: 60px;
+  width: 60px;
+}
+
+#addStoryForm img
+{
+  position: relative;
+left: 60%;
+  top: -5px;
+  width: 60px;
+}
+
+
+#edit-profile-form
+{
+  position: relative;
+left: 30%;
+
+}
+
+#edit-profile-form button
+{
+  position: absolute;
+left: -22%;
+top: 100%;
+  width: 200px;
+}
+
+#edit-profile-form #submitEditprofile
+{
+
+left: 10%;
+
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+/* Forms */
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 18px 0;
+}
+
+form > * {
+  margin: 10px 0;
+}
+
+form label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: inline-block;
+  width: 3.5rem;
+  text-align: right;
+  margin-right: 5px;
+}
+
+form input {
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 2px;
+  padding: 8px;
+  width: 300px;
+  box-shadow: 0 0 3px 1px lightgray;
+}
+
+form input:focus {
+  outline: none;
+  box-shadow: 0 0 4px 1px darkgray;
+}
+
+form > button {
+  width: 4rem;
+  margin: 5px 0 15px 65px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 0.85rem;
+  background-color: lightslategray;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+form > button:hover {
+  background-color: dimgray;
+}
+
+form > hr {
+  margin: 0;
+  border: 1px solid lightgray;
+}
+
+.login-input label {
+  width: 70px;
+}
+
+
+/* responsive queries for tightening things up for mobile. */
+
+@media screen and (max-width: 576px) {
+  body {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 900px;
+    margin: 8px auto;
+  }
+}
